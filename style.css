@@ -1,0 +1,348 @@
+body {
+    background-color: lightgray;
+    margin: 0 0 0 0;
+    font-family: 'AR One Sans', sans-serif;
+    color: #808080;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+}
+
+.acerca-imagen img {
+    width: 250px;
+    height: 460px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.barra-nav {
+    background-color: rgba(34, 11, 11, 0.637);
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 10px;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    line-height: 80px;
+    margin-right: 20px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.lista {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    cursor: pointer;
+    color: white;
+    margin-right: 15px;
+}
+
+.nav-item {
+    margin: 5px 5px;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.nav-item a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: gray;
+    color: white;
+}
+
+#seccion-principal {
+    background-color: lightgray;
+
+}
+
+.seccion-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.parrafo1,
+.parrafo2 {
+    width: 300px;
+}
+
+.acerca-de,
+.acerca-imagen {
+    margin: 10px;
+}
+
+.img-aux {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contacto {
+    background-color: rgba(34, 11, 11, 0.637);
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h3 {
+    color: bisque;
+}
+
+footer ul {
+    list-style: none;
+    cursor: pointer;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+.trabajos {
+    display: flex;
+    margin: 15px 20px 10px 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.trabajo {
+    width: 45%;
+    height: 250px;
+    text-align: center;
+    border: 1px solid #808080;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.trabajo-contenido {
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+.titulo-trabajo {
+    color: red;
+    width: auto;
+    height: auto;
+    display: block;
+
+}
+
+.descripcion-trabajo {
+    width: 60%;
+    font-size: 0.7em;
+}
+
+.img-trabajo {
+    width: 35%;
+    height: 150px;
+}
+
+.formulario-contenedor {
+    text-align: center;
+    background-color: #f6f7f8;
+    /*border: 1px solid #d6d9dc;*/
+    border-radius: 3px;
+
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px 0 10px 0;
+    
+}
+
+.form-format{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+
+    width: 50%;
+    padding: 20px 50px 20px 50px;
+    margin: 30px 0 10px 0;
+}
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+
+
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+
+
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+
+
+    width: 100%;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+
+    color: #ffffff;
+    background-color: #5995da;
+
+
+    border: none;
+    border-radius: 3px;
+
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+
+.form-row button:hover {
+    background-color: #76aeed;
+}
+
+
+.form-row button:active {
+    background-color: #407fc7;
+}
+
+.mensaje-error{
+    font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+    .barra-nav {
+        background-color: green;
+        font-size: 1.2em;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .barra-nav {
+        background-color: red;
+        padding: 0;
+
+
+
+    }
+
+    .lista {
+        height: 0vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #808080;
+        text-align: center;
+
+        transition: all 0.5s;
+        overflow: hidden;
+        margin: 0 auto;
+        display: block;
+        font-size: 2em;
+        text-align: center;
+        padding: 0;
+        border-radius: 10px;
+        /*float: none;
+        
+        width: 174px;
+        
+        opacity: 0;*/
+    }
+
+    .nav-item {
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+        border: 1px solid white;
+        padding: 20px;
+    }
+
+    .checkbtn {
+        display: block;
+
+    }
+
+    .acerca-imagen {
+        display: none;
+    }
+
+    .parrafo1 {
+        text-align: center;
+    }
+
+    .parrafo2 {
+        text-align: justify;
+    }
+
+    .img-aux {
+        height: auto;
+    }
+
+    .trabajo {
+        width: 70%;
+    }
+
+    .lista.active {
+        height: 100vh;
+    }
+
+   .formulario{
+    padding: 10px 50px;
+   }
+
+}
+
+/*Hacer medias querys para diferentes tamaños*/
